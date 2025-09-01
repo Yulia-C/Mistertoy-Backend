@@ -1,0 +1,21 @@
+[
+  {
+    "balance": 10000,
+    "createdAt": 1755886889356,
+    "fullname": "Admin Adminov",
+    "password": "admin",
+    "updatedAt": 1755886889356,
+    "username": "admin",
+    "_id": "O9hzx",
+    "isAdmin": true
+  },
+  {
+    "username": "mamamama",
+    "password": "11111111",
+    "fullname": "Yukia",
+    "email": "some@mail.com",
+    "gender": "male",
+    "balance": 1000,
+    "_id": "ycaJM"
+  }
+]
