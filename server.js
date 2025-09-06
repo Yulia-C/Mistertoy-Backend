@@ -7,6 +7,7 @@ import cors from 'cors'
 import { toyService } from './services/toy.service.js'
 import { loggerService } from './services/logger.service.js'
 import { userService } from './services/user.service.js'
+import { branchService } from './services/branch.service.js'
 
 const app = express()
 
@@ -177,7 +178,7 @@ app.get('/api/auth/check-email', (req, res) => {
             res.status(400).send({ message: err })
         })
 })
-   
+
 // signup
 app.post('/api/auth/signup', (req, res) => {
     const credentials = req.body
@@ -218,6 +219,17 @@ app.put('/api/user', (req, res) => {
         .catch(err => {
             loggerService.error('Cannot edit user', err)
             res.status(400).send('Cannot edit user')
+        })
+})
+
+// Branches map
+app.get('/api/about', (req, res) => {
+console.log('getting:')
+    branchService.query()
+        .then(branches => res.send(branches))
+        .catch(err => {
+            loggerService.error('Cannot load branches', err)
+            res.status(400).send('Cannot load branches')
         })
 })
 
