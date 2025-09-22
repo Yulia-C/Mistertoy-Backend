@@ -1,0 +1,28 @@
+{
+  "name": "mistertoy-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "prod": "set NODE_ENV=production&&node server.js"
+  },
+  "repository": {
+    "type": "url",
+    "url": "https://github.com/Yulia-C/Mistertoy-Backend"
+  },
+  "type": "module",
+  "author": "Yulia C",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "cryptr": "^6.3.0",
+    "express": "^5.1.0",
+    "follow-redirects": "^1.15.11",
+    "mongodb": "^6.19.0"
+  }
+}
