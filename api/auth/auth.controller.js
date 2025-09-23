@@ -17,9 +17,10 @@ export async function login(req, res) {
 
 export async function signup(req, res) {
     const { username, password, fullname, email, imgUrl, gender, balance, isAdmin } = req.body
+    console.log('{username, password, fullname, email, imgUrl, gender, balance, isAdmin}:', { username, password, fullname, email, imgUrl, gender, balance, isAdmin })
     //    const user ={ username, password, fullname, email, imgUrl, gender, balance, isAdmin }
     try {
-        const account = await authService.signup({username, password, fullname, email, imgUrl, gender, balance, isAdmin})
+        const account = await authService.signup({ username, password, fullname, email, imgUrl, gender, balance, isAdmin })
         loggerService.debug(`auth.route - new account created: ` + account)
 
         const user = await authService.login(username, password, email)

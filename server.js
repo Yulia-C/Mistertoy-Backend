@@ -23,6 +23,7 @@ loggerService.info('server.js loaded...')
 const app = express()
 
 if (process.env.NODE_ENV === 'production') {
+    console.log('NODE_ENV:', NODE_ENV)
     // Express serve static files on production environment
     app.use(express.static(path.resolve(__dirname, 'public')))
     console.log('__dirname: ', __dirname)
@@ -32,7 +33,8 @@ if (process.env.NODE_ENV === 'production') {
             'http://127.0.0.1:8080',
             'http://localhost:8080',
             'http://127.0.0.1:5173',
-            'http://localhost:5173'
+            'http://localhost:5173',
+            'https://mistertoy-backend-r01c.onrender.com'
         ],
         credentials: true
     }
