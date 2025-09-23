@@ -11,4 +11,4 @@ if (process.env.NODE_ENV === 'production') {
 config.isGuestMode = true
 
 // Manual check for atlas:
-// config = configProd
+config = configProd
