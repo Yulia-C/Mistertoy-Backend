@@ -29,7 +29,7 @@ Built with **React (Vite)** on the frontend and **Node.js, Express, MongoDB** on
 **Frontend:**  
 - React + Vite  
 - CSS
-- 
+
 **Backend:**  
 - Node.js  
 - Express  
