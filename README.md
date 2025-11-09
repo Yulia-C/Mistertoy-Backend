@@ -13,14 +13,21 @@ Built with **React (Vite)** on the frontend and **Node.js, Express, MongoDB** on
 ## 🧩 Features
 
 ### 👤 User Features
-- 🔍 **Search, filter, and sort** toys  
-- 🧾 **Signup / Login** with validation  
-- 🛒 **Add / Remove toys** from cart and "buy" them  
-- 💬 **Post, edit, and delete reviews** about toys  
-- 💭 **Chat in real time** about a toy using **web sockets**  
+- 🔍 **Search, filter, and sort** toys by category, price, or name  
+- 🧾 **Signup / Login** with built-in validation  
+- 🛒 **Add / Remove toys** from cart and “buy” them  
+- 💬 **Post, edit, and delete reviews** on toys  
+- 💭 **Live chat** about each toy with **real-time socket communication**  
+- 🗺️ **Interactive map** showing store branches – click to zoom and view branch details  
 
-### 🔐 Admin Features
-- 🧸 Add, update, and remove toys from the catalog  
+### 🔐 Admin & Analytics
+- 🧸 **Add, update, and remove toys** (full CRUD management)  
+- 📊 **Dashboard** showing:
+  - Toys in stock grouped by labels  
+  - Visual overview of toy categories and inventory levels  
+- 🗃️ **Reviews management page** with:
+  - All reviews in one place  
+  - Advanced **filtering and sorting** options  
 
 ---
 
@@ -28,9 +35,12 @@ Built with **React (Vite)** on the frontend and **Node.js, Express, MongoDB** on
 
 **Frontend:**  
 - React + Vite  
-- CSS
+- CSS 
+- Socket.io client  
 
 **Backend:**  
 - Node.js  
 - Express  
-- MongoDB (Mongoose ORM)  
+- MongoDB 
+- Socket.io server  
+
